@@ -16,6 +16,7 @@ enum TaskListViewAction {
 
 struct TaskListViewEnvironment {
     let taskItemViewEnvironment: TaskItemViewEnvironment
+    let analyticsClient: AnalyticsClientProtocol
 }
 
 let taskListViewReducer = Reducer<TaskListViewState, TaskListViewAction, TaskListViewEnvironment>.combine(
@@ -30,6 +31,12 @@ let taskListViewReducer = Reducer<TaskListViewState, TaskListViewAction, TaskLis
     switch action {
     case .toggleEditingMode:
         state.isEditing.toggle()
+        environment
+            .analyticsClient
+            .track(eventName: "toggle_editing_mode", data: [
+                "newState": state.isEditing ? "editing" : "not editing"
+            ]
+            )
         state.tasks = IdentifiedArray(
             uniqueElements: state.tasks.map {
                 TaskItemViewState(

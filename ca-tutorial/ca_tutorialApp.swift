@@ -1,5 +1,3 @@
-//
-
 import SwiftUI
 
 @main
@@ -21,7 +19,10 @@ struct ca_tutorialApp: App {
                             environment:
                                 TaskListViewEnvironment(
                                     taskItemViewEnvironment:
-                                        TaskItemViewEnvironment()
+                                        TaskItemViewEnvironment(),
+                                    analyticsClient: AnalyticsClient(
+                                        firebaseAnalyticsWrapper: FirebaseAnalytics()
+                                    )
                                 )
                         )
             )

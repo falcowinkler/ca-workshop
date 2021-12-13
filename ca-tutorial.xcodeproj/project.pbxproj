@@ -23,6 +23,8 @@
 		5923A9482711EE14000CE111 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5923A9472711EE14000CE111 /* ComposableArchitecture */; };
 		5923A94A2711F0AD000CE111 /* CATaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A9492711F0AD000CE111 /* CATaskItemView.swift */; };
 		5923A94C271203E2000CE111 /* CATaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A94B271203E2000CE111 /* CATaskListView.swift */; };
+		59ADB19B2767BBEB0070EAB6 /* AnalyticsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ADB19A2767BBEB0070EAB6 /* AnalyticsClient.swift */; };
+		59ADB19D2767BD540070EAB6 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ADB19C2767BD540070EAB6 /* Firebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		5923A9442711ED8F000CE111 /* CATaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATaskEditView.swift; sourceTree = "<group>"; };
 		5923A9492711F0AD000CE111 /* CATaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATaskItemView.swift; sourceTree = "<group>"; };
 		5923A94B271203E2000CE111 /* CATaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATaskListView.swift; sourceTree = "<group>"; };
+		59ADB19A2767BBEB0070EAB6 /* AnalyticsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsClient.swift; sourceTree = "<group>"; };
+		59ADB19C2767BD540070EAB6 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		5923A90D2711E4FA000CE111 /* ca-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				59ADB19C2767BD540070EAB6 /* Firebase.swift */,
+				59ADB19A2767BBEB0070EAB6 /* AnalyticsClient.swift */,
 				5923A94B271203E2000CE111 /* CATaskListView.swift */,
 				5923A9442711ED8F000CE111 /* CATaskEditView.swift */,
 				5923A9492711F0AD000CE111 /* CATaskItemView.swift */,
@@ -295,6 +301,8 @@
 				5923A9432711E5D0000CE111 /* TaskItemView.swift in Sources */,
 				5923A90F2711E4FA000CE111 /* ca_tutorialApp.swift in Sources */,
 				5923A9412711E5D0000CE111 /* TaskEditView.swift in Sources */,
+				59ADB19D2767BD540070EAB6 /* Firebase.swift in Sources */,
+				59ADB19B2767BBEB0070EAB6 /* AnalyticsClient.swift in Sources */,
 				5923A9402711E5D0000CE111 /* UserData.swift in Sources */,
 				5923A93E2711E5D0000CE111 /* TaskListView.swift in Sources */,
 				5923A9452711ED8F000CE111 /* CATaskEditView.swift in Sources */,
