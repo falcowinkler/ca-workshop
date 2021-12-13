@@ -1,14 +1,22 @@
 import ComposableArchitecture
 import SwiftUI
+import TaskEditViewFeature
 
-struct TaskItemViewState: Equatable, Identifiable {
-    var isEditing: Bool
-    var isDone: Bool
-    var title: String
-    let id: UUID
+public struct TaskItemViewState: Equatable, Identifiable {
+    public init(isEditing: Bool, isDone: Bool, title: String, id: UUID) {
+        self.isEditing = isEditing
+        self.isDone = isDone
+        self.title = title
+        self.id = id
+    }
+
+    public var isEditing: Bool
+    public var isDone: Bool
+    public var title: String
+    public let id: UUID
 }
 
-enum TaskItemViewAction {
+public enum TaskItemViewAction {
     case toggleDone
     case taskEditViewAction(TaskEditViewAction)
     case delete

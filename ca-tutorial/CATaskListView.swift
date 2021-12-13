@@ -1,5 +1,7 @@
 import ComposableArchitecture
 import SwiftUI
+import Analytics
+import TaskEditViewFeature
 
 struct TaskListViewState: Equatable {
     var tasks: IdentifiedArrayOf<TaskItemViewState>

@@ -2,13 +2,14 @@
  For the course of this tutorial, we assume this is some kind of big 3rd party tracking
  Framework dependency with a long compile time
  */
-struct FirebaseAnalytics {
-    func track(eventName: String, data: [String: String]) {
+public struct FirebaseAnalytics {
+    public init () {}
+    public func track(eventName: String, data: [String: String]) {
         print(eventName, data.debugDescription)
     }
 }
 
-protocol FirebaseAnalyticsProtocol {
+public protocol FirebaseAnalyticsProtocol {
     func track(eventName: String, data: [String: String])
 }
 
