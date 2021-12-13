@@ -3,25 +3,36 @@ import SwiftUI
 import Analytics
 import TaskEditViewFeature
 
-struct TaskListViewState: Equatable {
-    var tasks: IdentifiedArrayOf<TaskItemViewState>
-    var draftTitle: String
-    var isEditing: Bool
+public struct TaskListViewState: Equatable {
+    public init(tasks: IdentifiedArrayOf<TaskItemViewState>, draftTitle: String, isEditing: Bool) {
+        self.tasks = tasks
+        self.draftTitle = draftTitle
+        self.isEditing = isEditing
+    }
+
+    public var tasks: IdentifiedArrayOf<TaskItemViewState>
+    public var draftTitle: String
+    public var isEditing: Bool
 }
 
-enum TaskListViewAction {
+public enum TaskListViewAction {
     case taskItemViewAction(id: UUID, action: TaskItemViewAction)
     case updateDraftTitle(String)
     case toggleEditingMode
     case createTodo
 }
 
-struct TaskListViewEnvironment {
-    let taskItemViewEnvironment: TaskItemViewEnvironment
-    let analyticsClient: AnalyticsClientProtocol
+public struct TaskListViewEnvironment {
+    public init(taskItemViewEnvironment: TaskItemViewEnvironment, analyticsClient: AnalyticsClientProtocol) {
+        self.taskItemViewEnvironment = taskItemViewEnvironment
+        self.analyticsClient = analyticsClient
+    }
+
+    public let taskItemViewEnvironment: TaskItemViewEnvironment
+    public let analyticsClient: AnalyticsClientProtocol
 }
 
-let taskListViewReducer = Reducer<TaskListViewState, TaskListViewAction, TaskListViewEnvironment>.combine(
+public let taskListViewReducer = Reducer<TaskListViewState, TaskListViewAction, TaskListViewEnvironment>.combine(
     taskItemViewReducer
         .forEach(
             state: \.tasks,
@@ -67,9 +78,13 @@ let taskListViewReducer = Reducer<TaskListViewState, TaskListViewAction, TaskLis
     return .none
 })
 
-struct CATaskListView: View {
+public struct CATaskListView: View {
+    public init(store: Store<TaskListViewState, TaskListViewAction>) {
+        self.store = store
+    }
+
     let store: Store<TaskListViewState, TaskListViewAction>
-    var body: some View {
+    public var body: some View {
         WithViewStore(self.store) { viewStore in
             NavigationView {
                 List {

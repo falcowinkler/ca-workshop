@@ -19,6 +19,9 @@ let package = Package(
         .library(
             name: "TaskEditViewFeature",
             targets: ["TaskEditViewFeature"]),
+        .library(
+            name: "TaskListView",
+            targets: ["TaskListView"]),
     ],
     dependencies: [
         .package(
@@ -38,6 +41,12 @@ let package = Package(
         .target(
             name: "TaskEditViewFeature",
             dependencies: [
+                composableArchitecture
+            ]),
+        .target(
+            name: "TaskListView",
+            dependencies: [
+                "TaskEditViewFeature",
                 composableArchitecture
             ]),
     ]

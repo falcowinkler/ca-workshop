@@ -22,9 +22,11 @@ public enum TaskItemViewAction {
     case delete
 }
 
-struct TaskItemViewEnvironment {}
+public struct TaskItemViewEnvironment {
+    public init () {}
+}
 
-let taskItemViewReducer = Reducer<TaskItemViewState, TaskItemViewAction, TaskItemViewEnvironment> {
+public let taskItemViewReducer = Reducer<TaskItemViewState, TaskItemViewAction, TaskItemViewEnvironment> {
     state, action, environment in
     switch action {
     case .toggleDone:
@@ -37,10 +39,14 @@ let taskItemViewReducer = Reducer<TaskItemViewState, TaskItemViewAction, TaskIte
     return .none
 }
 
-struct CATaskItemView: View {
+public struct CATaskItemView: View {
+    public init(store: Store<TaskItemViewState, TaskItemViewAction>) {
+        self.store = store
+    }
+
     let store: Store<TaskItemViewState, TaskItemViewAction>
 
-    var body: some View {
+    public var body: some View {
         WithViewStore(self.store) { viewStore in
             HStack {
                 if viewStore.isEditing {

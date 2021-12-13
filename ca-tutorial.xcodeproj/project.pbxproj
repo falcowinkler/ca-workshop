@@ -19,11 +19,9 @@
 		5923A9402711E5D0000CE111 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93A2711E5D0000CE111 /* UserData.swift */; };
 		5923A9412711E5D0000CE111 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93B2711E5D0000CE111 /* TaskEditView.swift */; };
 		5923A9432711E5D0000CE111 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93D2711E5D0000CE111 /* TaskItemView.swift */; };
-		5923A9482711EE14000CE111 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5923A9472711EE14000CE111 /* ComposableArchitecture */; };
-		5923A94C271203E2000CE111 /* CATaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A94B271203E2000CE111 /* CATaskListView.swift */; };
-		59ADB1A92767CBAB0070EAB6 /* CATaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ADB1A82767CBAA0070EAB6 /* CATaskItemView.swift */; };
 		59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AB2767CC6B0070EAB6 /* Analytics */; };
 		59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */; };
+		59ADB1B02767CE410070EAB6 /* TaskListView in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AF2767CE410070EAB6 /* TaskListView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +57,6 @@
 		5923A93A2711E5D0000CE111 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		5923A93B2711E5D0000CE111 /* TaskEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
 		5923A93D2711E5D0000CE111 /* TaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
-		5923A94B271203E2000CE111 /* CATaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATaskListView.swift; sourceTree = "<group>"; };
-		59ADB1A82767CBAA0070EAB6 /* CATaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATaskItemView.swift; sourceTree = "<group>"; };
 		59ADB1AA2767CC120070EAB6 /* todos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = todos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5923A9482711EE14000CE111 /* ComposableArchitecture in Frameworks */,
 				59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */,
+				59ADB1B02767CE410070EAB6 /* TaskListView in Frameworks */,
 				59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,8 +113,6 @@
 		5923A90D2711E4FA000CE111 /* ca-tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				59ADB1A82767CBAA0070EAB6 /* CATaskItemView.swift */,
-				5923A94B271203E2000CE111 /* CATaskListView.swift */,
 				5923A9392711E5D0000CE111 /* Task.swift */,
 				5923A93B2711E5D0000CE111 /* TaskEditView.swift */,
 				5923A93D2711E5D0000CE111 /* TaskItemView.swift */,
@@ -181,9 +175,9 @@
 			);
 			name = "ca-tutorial";
 			packageProductDependencies = (
-				5923A9472711EE14000CE111 /* ComposableArchitecture */,
 				59ADB1AB2767CC6B0070EAB6 /* Analytics */,
 				59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */,
+				59ADB1AF2767CE410070EAB6 /* TaskListView */,
 			);
 			productName = "ca-tutorial";
 			productReference = 5923A90B2711E4FA000CE111 /* ca-tutorial.app */;
@@ -258,7 +252,6 @@
 			);
 			mainGroup = 5923A9022711E4FA000CE111;
 			packageReferences = (
-				5923A9462711EE14000CE111 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 5923A90C2711E4FA000CE111 /* Products */;
 			projectDirPath = "";
@@ -303,14 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5923A93F2711E5D0000CE111 /* Task.swift in Sources */,
-				5923A94C271203E2000CE111 /* CATaskListView.swift in Sources */,
 				5923A9112711E4FA000CE111 /* ContentView.swift in Sources */,
 				5923A9432711E5D0000CE111 /* TaskItemView.swift in Sources */,
 				5923A90F2711E4FA000CE111 /* ca_tutorialApp.swift in Sources */,
 				5923A9412711E5D0000CE111 /* TaskEditView.swift in Sources */,
 				5923A9402711E5D0000CE111 /* UserData.swift in Sources */,
 				5923A93E2711E5D0000CE111 /* TaskListView.swift in Sources */,
-				59ADB1A92767CBAB0070EAB6 /* CATaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,23 +651,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		5923A9462711EE14000CE111 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.29.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		5923A9472711EE14000CE111 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5923A9462711EE14000CE111 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
 		59ADB1AB2767CC6B0070EAB6 /* Analytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Analytics;
@@ -684,6 +659,10 @@
 		59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskEditViewFeature;
+		};
+		59ADB1AF2767CE410070EAB6 /* TaskListView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TaskListView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

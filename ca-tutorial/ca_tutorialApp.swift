@@ -1,6 +1,7 @@
 import SwiftUI
 import Analytics
 import TaskEditViewFeature
+import TaskListView
 
 @main
 struct ca_tutorialApp: App {
