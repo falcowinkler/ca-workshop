@@ -1,5 +1,5 @@
 import SwiftUI
-import Analytics
+import AnalyticsLive
 import TaskEditViewFeature
 import TaskListViewFeature
 

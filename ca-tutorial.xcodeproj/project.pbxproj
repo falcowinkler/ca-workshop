@@ -19,9 +19,10 @@
 		5923A9402711E5D0000CE111 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93A2711E5D0000CE111 /* UserData.swift */; };
 		5923A9412711E5D0000CE111 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93B2711E5D0000CE111 /* TaskEditView.swift */; };
 		5923A9432711E5D0000CE111 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93D2711E5D0000CE111 /* TaskItemView.swift */; };
-		59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AB2767CC6B0070EAB6 /* Analytics */; };
 		59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */; };
 		59ADB1B22767CEED0070EAB6 /* TaskListViewFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */; };
+		59ADB1B42767CFAC0070EAB6 /* AnalyticsLive in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1B32767CFAC0070EAB6 /* AnalyticsLive */; };
+		59ADB1B62767CFB20070EAB6 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1B52767CFB20070EAB6 /* Analytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */,
 				59ADB1B22767CEED0070EAB6 /* TaskListViewFeature in Frameworks */,
+				59ADB1B62767CFB20070EAB6 /* Analytics in Frameworks */,
 				59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */,
+				59ADB1B42767CFAC0070EAB6 /* AnalyticsLive in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,9 +177,10 @@
 			);
 			name = "ca-tutorial";
 			packageProductDependencies = (
-				59ADB1AB2767CC6B0070EAB6 /* Analytics */,
 				59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */,
 				59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */,
+				59ADB1B32767CFAC0070EAB6 /* AnalyticsLive */,
+				59ADB1B52767CFB20070EAB6 /* Analytics */,
 			);
 			productName = "ca-tutorial";
 			productReference = 5923A90B2711E4FA000CE111 /* ca-tutorial.app */;
@@ -652,10 +655,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		59ADB1AB2767CC6B0070EAB6 /* Analytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Analytics;
-		};
 		59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskEditViewFeature;
@@ -663,6 +662,14 @@
 		59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskListViewFeature;
+		};
+		59ADB1B32767CFAC0070EAB6 /* AnalyticsLive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnalyticsLive;
+		};
+		59ADB1B52767CFB20070EAB6 /* Analytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Analytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

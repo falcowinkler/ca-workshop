@@ -17,7 +17,7 @@ public protocol FirebaseAnalyticsProtocol {
 extension FirebaseAnalytics: FirebaseAnalyticsProtocol {}
 
 // Compiler bomb:
-/*
+
 import Darwin
 public func a1(x:Double) -> Double {
     return 1 - abs(x * 6 - floor(x * 3) * 2 - 1)
@@ -73,4 +73,4 @@ public func b8(x:Double) -> Double {
 public func b9(x: Double) -> Double {
     return 1 - abs(x * 6 - floor(x * 3) * 2 - 1)
 }
-*/
+

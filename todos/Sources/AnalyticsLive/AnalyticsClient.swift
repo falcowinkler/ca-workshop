@@ -1,6 +1,4 @@
-public protocol AnalyticsClientProtocol {
-    func track(eventName: String, data: [String: String])
-}
+import Analytics
 
 public struct AnalyticsClient: AnalyticsClientProtocol {
     private let firebaseAnalyticsWrapper: FirebaseAnalyticsProtocol

@@ -112,3 +112,24 @@ public struct CATaskListView: View {
         }
     }
 }
+
+struct TaskEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        CATaskListView(store: .init(
+            initialState: .init(tasks: IdentifiedArrayOf([
+                .init(
+                    isEditing: true,
+                    isDone: false,
+                    title: "get groceries",
+                    id: UUID()
+                )
+            ]), draftTitle: "get groceries",
+                                isEditing: false),
+            reducer: taskListViewReducer,
+            environment: TaskListViewEnvironment(
+                taskItemViewEnvironment: TaskItemViewEnvironment(), analyticsClient: NoopAnalyticsClient()
+            ))
+        )
+    }
+}
+

@@ -43,3 +43,15 @@ public struct CATaskEditView: View {
         }
     }
 }
+
+
+struct TaskEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        CATaskEditView(store: .init(
+            initialState: .init(title: "Get Groceries"),
+            reducer: taskEditViewReducer,
+            environment: TaskEditViewEnvironment())
+        )
+    }
+}
+

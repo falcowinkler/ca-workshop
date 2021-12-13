@@ -17,6 +17,9 @@ let package = Package(
             name: "Analytics",
             targets: ["Analytics"]),
         .library(
+            name: "AnalyticsLive",
+            targets: ["AnalyticsLive"]),
+        .library(
             name: "TaskEditViewFeature",
             targets: ["TaskEditViewFeature"]),
         .library(
@@ -39,6 +42,9 @@ let package = Package(
             name: "Analytics",
             dependencies: []),
         .target(
+            name: "AnalyticsLive",
+            dependencies: ["Analytics"]),
+        .target(
             name: "TaskEditViewFeature",
             dependencies: [
                 composableArchitecture
@@ -46,6 +52,7 @@ let package = Package(
         .target(
             name: "TaskListViewFeature",
             dependencies: [
+                "Analytics",
                 "TaskEditViewFeature",
                 composableArchitecture
             ]),
