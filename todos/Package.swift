@@ -20,8 +20,8 @@ let package = Package(
             name: "TaskEditViewFeature",
             targets: ["TaskEditViewFeature"]),
         .library(
-            name: "TaskListView",
-            targets: ["TaskListView"]),
+            name: "TaskListViewFeature",
+            targets: ["TaskListViewFeature"]),
     ],
     dependencies: [
         .package(
@@ -44,7 +44,7 @@ let package = Package(
                 composableArchitecture
             ]),
         .target(
-            name: "TaskListView",
+            name: "TaskListViewFeature",
             dependencies: [
                 "TaskEditViewFeature",
                 composableArchitecture

@@ -21,7 +21,7 @@
 		5923A9432711E5D0000CE111 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923A93D2711E5D0000CE111 /* TaskItemView.swift */; };
 		59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AB2767CC6B0070EAB6 /* Analytics */; };
 		59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */; };
-		59ADB1B02767CE410070EAB6 /* TaskListView in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1AF2767CE410070EAB6 /* TaskListView */; };
+		59ADB1B22767CEED0070EAB6 /* TaskListViewFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59ADB1AC2767CC6B0070EAB6 /* Analytics in Frameworks */,
-				59ADB1B02767CE410070EAB6 /* TaskListView in Frameworks */,
+				59ADB1B22767CEED0070EAB6 /* TaskListViewFeature in Frameworks */,
 				59ADB1AE2767CC6E0070EAB6 /* TaskEditViewFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +177,7 @@
 			packageProductDependencies = (
 				59ADB1AB2767CC6B0070EAB6 /* Analytics */,
 				59ADB1AD2767CC6E0070EAB6 /* TaskEditViewFeature */,
-				59ADB1AF2767CE410070EAB6 /* TaskListView */,
+				59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */,
 			);
 			productName = "ca-tutorial";
 			productReference = 5923A90B2711E4FA000CE111 /* ca-tutorial.app */;
@@ -660,9 +660,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskEditViewFeature;
 		};
-		59ADB1AF2767CE410070EAB6 /* TaskListView */ = {
+		59ADB1B12767CEED0070EAB6 /* TaskListViewFeature */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = TaskListView;
+			productName = TaskListViewFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
